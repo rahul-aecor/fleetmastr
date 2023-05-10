@@ -2,7 +2,7 @@ version: '3.9'
 services:
 
   laravel-docker:
-    container_name: laravel-docker
+    container_name: fleetmastr-2.30.0
     build: .
     volumes:
       - ./laravel-app:/var/www/html
