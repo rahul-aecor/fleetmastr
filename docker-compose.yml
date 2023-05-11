@@ -24,4 +24,4 @@ services:
     environment:
       - PMA_ARBITRARY=1
   extra_hosts:
-      - "fmdomain.com:3.138.192.7  
+      - "qa1.fleetmastr.com:3.138.192.7  
