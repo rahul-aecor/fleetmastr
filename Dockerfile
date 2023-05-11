@@ -26,7 +26,7 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 #RUN npm install -g npm@4.2.0
 
 # Install gulp-cli
-RUN npm install -g gulp-cli
+# RUN npm install -g gulp-cli
 
 # Install extensions
 # RUN docker-php-ext-install pdo_mysql mbstring  exif pcntl
