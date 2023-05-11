@@ -14,16 +14,16 @@ WORKDIR /var/www/html
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install nvm
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-ENV NVM_DIR=/root/.nvm
-RUN . $NVM_DIR/nvm.sh && nvm install 7.8.0 && nvm use 7.8.0
+#RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+#ENV NVM_DIR=/root/.nvm
+#RUN . $NVM_DIR/nvm.sh && nvm install 7.8.0 && nvm use 7.8.0
 
 # Set default node version
-RUN . $NVM_DIR/nvm.sh && nvm alias default 7.8.0
-CMD [ "node" ]
+#RUN . $NVM_DIR/nvm.sh && nvm alias default 7.8.0
+#CMD [ "node" ]
 
 # Install npm 4.2.0
-RUN npm install -g npm@4.2.0
+#RUN npm install -g npm@4.2.0
 
 # Install gulp-cli
 RUN npm install -g gulp-cli
